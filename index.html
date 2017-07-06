@@ -1,7 +1,6 @@
 <html>
 <head>
-<script type=“text/javascript” src=“swfobject.js”></script>
-<script type=“text/javascript” src=“player.js”></script>
+<script type="text/javascript" src="player.js"></script>
 <link rel="stylesheet" type="text/css" href="tombl.css">
 <!-- Remember to make this /tombl.css later      ^^^        (monospaced fonts ftw)-->
 <title>MakePlayStuff</title>
@@ -10,9 +9,11 @@
   <ul class="navbar">
       <li class="active"><a href="index.html">Home</a></li>
   </ul>
-  <div class="spacer"></div>
-  <div id=“flashContent” width=“482px” height=“387px”>
-	Get <a href="http://www.adobe.com/go/getflash">Adobe Flash Player</a>, otherwise this Scratch movie will not play.
-</div>
+  <div class="spacer"></div><br/>
+  <div style="overflow-y: hidden; height: 372px;" id="playerdiv">
+      <iframe id="player" allowtransparency="true" width="485" height="402" src="about:blank" frameborder="0" allowfullscreen></iframe>
+      <br/><br/>
+  </div>
+  <script>showproject(168178739); var objDiv = document.getElementById("playerdiv"); objDiv.scrollTop = 38; </script>
 </body>
 </html>
