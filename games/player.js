@@ -12,3 +12,6 @@ function loaded(gameid) {
   var objDiv = document.getElementById("playerdiv");
   objDiv.scrollTop = 38;
 }
+function showgame() {
+document.getElementById("gamewrapper").style.display = "block";
+}
