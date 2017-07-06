@@ -7,3 +7,8 @@ if (location.protocol === 'file:') {
 function showproject(id) {
   document.getElementById('player').src = protocol + "//scratch.mit.edu/projects/embed/" + id + "/?autostart=false";
 }
+function loaded(gameid) {
+  showproject(gameid);
+  var objDiv = document.getElementById("playerdiv");
+  objDiv.scrollTop = 38;
+}
