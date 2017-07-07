@@ -1,0 +1,32 @@
+<html>
+<head>
+    <script type="text/javascript" src="../player.js"></script>
+    <link rel="stylesheet" type="text/css" href="../../tombl.css">
+    <script src="../gallery.js"></script>
+    <link rel="stylesheet" type="text/css" href="../gallery.css">
+    <title>CO2 - Penclock</title>
+</head>
+
+<body onload="loaded()">
+    <ul class="navbar">
+        <li><a href="index.html">Home</a></li>
+    </ul>
+    <div class="spacer"></div><br/>
+    <div class="gamewrapper" id="gamewrapper">
+        <div style="overflow-y: hidden; height: 361px;" id="playerdiv" class="game">
+            <iframe id="player" allowtransparency="true" width="482" height="402" src="about:blank" frameborder="0" allowfullscreen></iframe>
+            <br/><br/>
+        </div>
+    </div>
+    <div class="gallery">
+    <img id="currentimg" src="about:blank" height="400">
+    <div id="imgs">
+        <img id="img1" src="about:blank" onclick="setimg(1)">
+        <img id="img2" src="about:blank" onclick="setimg(2)">
+        <img id="img3" src="about:blank" onclick="setimg(3)">
+        <img id="img4" src="about:blank" onclick="setimg(4)">
+    </div>
+    </div>
+    <a href='javascript:showgame(168178739)' class="button">Play</a>
+</body>
+</html>
