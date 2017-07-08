@@ -1,0 +1,23 @@
+#header {
+  background: black;
+  color: white;
+  width: 100%;
+  overflow: auto;
+  height: 80px;
+}
+
+#header h1 {
+  float: left;
+  color: limegreen;
+}
+
+#header a {
+  float: left;
+  text-decoration: none;
+  padding: 30px;
+  font-size: 20px;
+}
+
+#header a:hover {
+  background: grey;
+}
